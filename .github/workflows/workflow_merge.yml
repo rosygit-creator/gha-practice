@@ -1,4 +1,4 @@
-name: Run playwright tests
+name: Run playwright tests -Merge
 on: 
   pull_request:
     types:
