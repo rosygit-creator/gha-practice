@@ -5,7 +5,7 @@ test('has title', async ({ page }) => {
   await page.goto('https://thinking-tester-contact-list.herokuapp.com/');
 
   // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle('Contact List');
+  await expect(page).toHaveTitle('Contact List App');
 });
 
 test('login', async ({ page }) => {
@@ -18,5 +18,5 @@ test('login', async ({ page }) => {
   await page.locator('#password').fill('123');
 
   // click submit button
-  await expect(page.getByRole('button', { name: 'Submit' })).click();
+  await page.getByRole('button', { name: 'Submit' }).click();
 });
