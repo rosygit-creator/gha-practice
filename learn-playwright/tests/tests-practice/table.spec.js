@@ -1,21 +1,8 @@
 import {test, page} from '@playwright/test';
 
 
-// test('dropdown', async({page}) => {
-// await page.goto('https://rahulshettyacademy.com/AutomationPractice/');
 
-// await page.getByPlaceholder("Type to Select Countries").fill("chi");
-// const dropdowns=await page.locator('autocomplete').all();
-// const options=[];
-// for(const dropdown in dropdowns)
-//     options.push(dropdown.textcontext());
-
-// console.log(options)
-
-// })
-
-
-test('dropdown', async({page}) => {
+test('table data', async({page}) => {
 await page.goto('https://rahulshettyacademy.com/AutomationPractice/');
 
 
