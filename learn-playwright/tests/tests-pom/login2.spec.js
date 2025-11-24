@@ -3,7 +3,7 @@ import {test,page,expect} from '@playwright/test';
  import { LoginPage } from '../pom-objects/loginPage.js';
 
 let loginPage;
-// 
+//  using beforeEach hook
 test.beforeEach(async ({ page }) => {
         loginPage = new LoginPage(page);
         await loginPage.open();
@@ -11,7 +11,7 @@ test.beforeEach(async ({ page }) => {
 
 
 test('login test', async ({page}) => {
-  // await page.pause();
+  // await page.pause(); debugging the test
 
 // const loginPage = new LoginPage(page);
 
