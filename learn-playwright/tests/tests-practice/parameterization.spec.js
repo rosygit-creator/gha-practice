@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import * as test_data from '../test-data/test_data.json';
+import * as test_data from '../../test-data/test_data.json';
 
 // the test file displays techniques for test data management
 //  #1 reading from a json file
