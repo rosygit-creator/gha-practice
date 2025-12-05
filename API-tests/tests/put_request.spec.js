@@ -4,7 +4,7 @@ test.describe('API Tests', () => {
   const BASE_URL = 'https://api.example.com'; 
   
 
-  test('should send a POST request', async ({ request }) => {
+  test('should send a PUT request', async ({ request }) => {
     // define payload or body
     const payload= {
       userId: 5,
@@ -19,7 +19,7 @@ test.describe('API Tests', () => {
       'X-Custom-Header': 'my-value'
       };
       
-      const response = await request.post(`${BASE_URL}/users`, {
+      const response = await request.put(`${BASE_URL}/users`, {
         data: payload,
         headers: customHeaders
       });
